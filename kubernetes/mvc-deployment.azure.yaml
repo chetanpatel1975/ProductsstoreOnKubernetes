@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: mvc
-        image: houssemdocker/webapp:1.0
+        # image: houssemdocker/webapp:1.0
+        image: chetankumarpatel/product-store-mvc:v2.$(Build.BuildId)
         ports:
         - containerPort: 80
         resources:
